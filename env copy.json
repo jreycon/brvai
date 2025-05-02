@@ -1,0 +1,133 @@
+############
+# N8N Configuration
+############
+N8N_ENCRYPTION_KEY=4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f
+N8N_USER_MANAGEMENT_JWT_SECRET=1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d
+N8N_USER_MANAGEMENT_JWT_SECRET=1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d
+
+############
+# Supabase Secrets
+############
+POSTGRES_PASSWORD=U1v9X8kR3zD5mNpQ7sL4eY0hA2tJ6wO8
+JWT_SECRET=Z4x8C2v6B0n4M8f2L6p0R4t8W2q6S0e1
+ANON_KEY=SzY9x8K6l2P4v1Q3r5T7u9W1y3V5p7O9f1G3a5h7J9k
+SERVICE_ROLE_KEY=QrT1uS3vW5xY7zA9cE1gI3kM5oQ7sY9wE1gI3kM5oQ7sY9w
+DASHBOARD_USERNAME=brgs_admin
+DASHBOARD_PASSWORD=J7k9L5o3P1sD8f2H4gM6vC0rQ7xU9n2
+POOLER_TENANT_ID=gs-brv-ai
+
+############
+# Langfuse credentials
+############
+CLICKHOUSE_PASSWORD=K2m4N6p8R0t2V4x6Z8b0D2f4H6j8L0n2
+MINIO_ROOT_PASSWORD=R3s5P7v9T1x3Z5b7D9f1H3j5L7n9P1r3
+LANGFUSE_SALT=h6d4g2k8m0p2r4t6v8x0b2n4q6s8u0w2
+NEXTAUTH_SECRET=m9n1b3v5c7x9z1a3s5d7f9g1h3j5k7l9
+ENCRYPTION_KEY=e5d6c7b8a9f0e1d2c3b4a5f6e7d8c9b0a1f2e3d4c5b6a7f8
+
+############
+# [required for prod]
+# Caddy Config
+############
+#Uncomment and set when deploying publicly:
+N8N_HOSTNAME=n8n.brvai.com
+WEBUI_HOSTNAME=:open-webui.brvai.com
+FLOWISE_HOSTNAME=:flowise.brvai.com
+SUPABASE_HOSTNAME=:supabase.brvai.com
+#OLLAMA_HOSTNAME=:ollama.brvai.com
+#SEARXNG_HOSTNAME=searxng.brvai.com
+LETSENCRYPT_EMAIL=joel.reyes@brassringimpact.com
+
+# Everything below this point is optional and left unchanged 
+# (defaults will suffice unless you need to tweak them).
+#
+############
+# Optional SearXNG Config
+############
+# SEARXNG_UWSGI_WORKERS=4
+# SEARXNG_UWSGI_THREADS=4
+
+############
+# Database
+############
+POSTGRES_HOST=db
+POSTGRES_DB=postgres
+POSTGRES_PORT=5432
+
+############
+# Supavisor
+############
+POOLER_PROXY_PORT_TRANSACTION=6543
+POOLER_DEFAULT_POOL_SIZE=20
+POOLER_MAX_CLIENT_CONN=100
+SECRET_KEY_BASE=UpNVntn3cDxHJpq99YMc1T1AQgQpc8kfYTuRgBiYa15BLrx8etQoXz3gZv1/u2oq
+VAULT_ENC_KEY=yUpNVntn3cDxHJpq99YMc1T1AQgQpc8kfYTuRgBiYa15BLrx8etQoXz3gZv1/u2oq
+
+############
+# API Proxy
+############
+KONG_HTTP_PORT=8000
+KONG_HTTPS_PORT=8443
+
+############
+# API
+############
+PGRST_DB_SCHEMAS=public,storage,graphql_public
+
+############
+# Auth
+############
+SITE_URL=http://localhost:3000
+ADDITIONAL_REDIRECT_URLS=
+JWT_EXPIRY=3600
+DISABLE_SIGNUP=false
+API_EXTERNAL_URL=http://localhost:8000
+
+## Mailer Config
+MAILER_URLPATHS_CONFIRMATION="/auth/v1/verify"
+MAILER_URLPATHS_INVITE="/auth/v1/verify"
+MAILER_URLPATHS_RECOVERY="/auth/v1/verify"
+MAILER_URLPATHS_EMAIL_CHANGE="/auth/v1/verify"
+
+## Email auth
+ENABLE_EMAIL_SIGNUP=true
+ENABLE_EMAIL_AUTOCONFIRM=false
+SMTP_ADMIN_EMAIL=admin@example.com
+SMTP_HOST=supabase-mail
+SMTP_PORT=2500
+SMTP_USER=fake_mail_user
+SMTP_PASS=fake_mail_password
+SMTP_SENDER_NAME=fake_sender
+ENABLE_ANONYMOUS_USERS=false
+
+## Phone auth
+ENABLE_PHONE_SIGNUP=true
+ENABLE_PHONE_AUTOCONFIRM=true
+
+############
+# Studio
+############
+STUDIO_DEFAULT_ORGANIZATION=Brass Ring Ventures / GS
+STUDIO_DEFAULT_PROJECT=BRVAI
+STUDIO_PORT=3000
+SUPABASE_PUBLIC_URL=http://localhost:8000
+IMGPROXY_ENABLE_WEBP_DETECTION=true
+OPENAI_API_KEY=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
+
+############
+# Functions
+############
+FUNCTIONS_VERIFY_JWT=false
+
+############
+# Logs
+############
+LOGFLARE_LOGGER_BACKEND_API_KEY=b2593566a4ed0691ab2805f25a229225390845c72321b44d04d4066d997dd662
+LOGFLARE_API_KEY=7b3fbbcae00b188b2c521502c427157621475d256513039a5237fa769887226e
+
+# Docker socket location
+DOCKER_SOCKET_LOCATION=/var/run/docker.sock
+
+# Google Cloud Project details
+GOOGLE_PROJECT_ID=GOOGLE_PROJECT_ID
+GOOGLE_PROJECT_NUMBER=GOOGLE_PROJECT_NUMBER
